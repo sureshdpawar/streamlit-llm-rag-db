@@ -97,8 +97,11 @@ conn = snowflake.connector.connect(
 # Assuming you have a function to pull financials and execute queries as defined earlier
 # Definitions would remain the same, so not repeated here for brevity
 
+st.title("Generative AI Powered Stock Market Information Bot")
+image_path = 'market_up.png'  # Ensure this path is correct or adjust as needed
+st.image(image_path, caption='AI Assistant')
+
 st.markdown("""
-# Generative AI Powered Stock Market Information Bot 
 ### 
 Leveraging Language Models (LLMs) and Retrieval Augmented Generation (RAG) through Langchain, this app seamlessly translate natural 
 language inquiries concerning financial statements into precise Snowflake queries. This innovative approach empowers users to explore complex financial data with simple questions, streamlining access to insightful analytics.
